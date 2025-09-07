@@ -1,0 +1,28 @@
+/* assets/css/components/TaskCard.css */
+.task-card {
+    background-color: var(--surface-color);
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    cursor: grab;
+    border-left: 4px solid transparent;
+}
+
+.task-card.priority-high { border-left-color: #d9534f; }
+.task-card.priority-medium { border-left-color: #f0ad4e; }
+.task-card.priority-low { border-left-color: #5cb85c; }
+
+.task-card h4 {
+    margin: 0 0 10px 0;
+}
+
+.task-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.task-card.dragging {
+    opacity: 0.5;
+}

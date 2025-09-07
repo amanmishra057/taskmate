@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TaskMate</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>TaskMate</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <main class="container">
+        <h2>Your Projects</h2>
+        <div id="projects-list" class="projects-grid">
+            </div>
+        <hr>
+        <h3>Create New Project</h3>
+        <form id="create-project-form">
+            <div class="form-group">
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" required>
+            </div>
+            <div class="form-group">
+                <label for="project-description">Description</label>
+                <textarea id="project-description"></textarea>
+            </div>
+            <button type="submit">Create Project</button>
+        </form>
+    </main>
+    <script src="assets/js/services/api.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
